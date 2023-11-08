@@ -42,6 +42,10 @@ public class Document {
         remplacer(index, index, insertion);
     }
 
+    public void minuscules (int start, int end){
+        remplacer(start, end, texte.substring(start, end).toLowerCase());
+    }
+
     @Override
     public String toString() {
         return this.texte;
