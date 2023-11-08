@@ -17,4 +17,9 @@ public class CommandeMajuscule extends CommandeDocument{
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommand() {
+        System.out.println("commande pour mettre en majuscule une bout de texte");
+    }
+
 }

@@ -20,4 +20,9 @@ public class CommandeAjouter extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommand() {
+        System.out.println("Commande pour ajouter du texte à la fin du document");
+    }
+
 }

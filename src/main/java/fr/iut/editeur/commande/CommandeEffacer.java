@@ -16,4 +16,9 @@ public class CommandeEffacer extends CommandeDocument{
         this.document.effacer(Integer.parseInt(parameters[1]), Integer.parseInt(parameters[2])); //appel de la fonction de remplacement de document
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommand() {
+        System.out.println("commande pour effacer une partie du texte");
+    }
 }

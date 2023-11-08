@@ -17,4 +17,9 @@ public class CommandeRemplacer extends CommandeDocument{
         this.document.remplacer(Integer.parseInt(parameters[1]), Integer.parseInt(parameters[2]), texte); //appel de la fonction de remplacement de document
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommand() {
+        System.out.println("commande pour remplacer un bout de texte par un autre");
+    }
 }
