@@ -16,4 +16,9 @@ public class CommandeClear extends CommandeDocument{
         this.document.clear(); //appel de la fonction de remplacement de document
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommand() {
+        System.out.println("commande pour supprimer tout le texte du document");
+    }
 }

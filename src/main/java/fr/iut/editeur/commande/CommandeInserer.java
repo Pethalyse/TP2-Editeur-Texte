@@ -17,4 +17,9 @@ public class CommandeInserer extends CommandeDocument{
         this.document.inserer(Integer.parseInt(parameters[1]), texte); //appel de la fonction de remplacement de document
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommand() {
+        System.out.println("commande pour inserer un bout de texte à un certain endroit du texte déjà existant du document");
+    }
 }
