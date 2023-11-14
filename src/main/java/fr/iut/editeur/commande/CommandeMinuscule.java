@@ -17,4 +17,9 @@ public class CommandeMinuscule extends CommandeDocument{
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommand() {
+
+    }
+
 }
