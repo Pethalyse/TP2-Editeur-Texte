@@ -1,5 +1,8 @@
 package fr.iut.editeur.document;
 
+/**
+ * Class objet Document qui contient toutes les données d'un document
+ */
 public class Document {
 
     private String texte;
@@ -16,6 +19,10 @@ public class Document {
         this.texte = texte;
     }
 
+    /**
+     * Ajouter du texte en fin de document
+     * @param texte le bout d etexte à ajouter
+     */
     public void ajouter(String texte) {
         this.texte += texte;
     }

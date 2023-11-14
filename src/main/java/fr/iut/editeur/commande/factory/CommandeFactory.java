@@ -3,6 +3,10 @@ package fr.iut.editeur.commande.factory;
 import fr.iut.editeur.commande.*;
 import fr.iut.editeur.document.Document;
 
+/**
+ * Class d'appel de methode
+ * Singleton
+ */
 public class CommandeFactory {
 
     private static CommandeFactory instance;
@@ -16,6 +20,12 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+    /**
+     * Methode qui permet d'appeler les differentes actions sur le document
+     * @param name le nom de l'action
+     * @param document le document {@link Document}
+     * @param parameters les parametes de l'action donné en paramètre actions
+     */
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);
