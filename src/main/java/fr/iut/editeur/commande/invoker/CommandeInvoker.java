@@ -4,6 +4,7 @@ import fr.iut.editeur.commande.Commande;
 
 import java.util.Stack;
 
+//ajout
 public class CommandeInvoker {
 
     private static CommandeInvoker instance;
